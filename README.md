@@ -1,1 +1,1 @@
-# frontend_10_18
+# Füredi Dániel
