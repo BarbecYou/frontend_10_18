@@ -24,7 +24,7 @@ const data = [
       "meret": "256"
     },
     {
-      "nev": "Ólcsó microSD",
+      "nev": "Olcsó microSD",
       "meret": "32"
     },
     {
@@ -33,8 +33,21 @@ const data = [
     }
   ];
 
-  document.addEventListener('DOMContentLoaded', init);
 
-  function init(){
-    document.getElementById('searchTextInput').addEventListener()
-  };
+
+  searchTextInput.addEventListener('input', (e) => {
+    const value = e.target.value.trim().toLowerCase();
+    if (value.length < 3){
+
+    } else {
+      const results = data.filter(item => item.nev.toLowerCase().includes(value));
+      results.forEach(result => {
+        const card = document.createElement('div');
+        card.classList.add('col-md-4');
+        
+      });
+    }
+   
+  });
+
+  
